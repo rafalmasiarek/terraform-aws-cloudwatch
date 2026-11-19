@@ -5,7 +5,7 @@
 ### Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.9.0 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 6.0 |
 | <a name="requirement_cwquery"></a> [cwquery](#requirement\_cwquery) | >= 0.1.0 |
@@ -14,7 +14,7 @@
 ### Modules
 
 | Name | Source | Version |
-|------|--------|---------|
+| ---- | ------ | ------- |
 | <a name="module_composite_alarm"></a> [composite\_alarm](#module\_composite\_alarm) | ./modules/composite-alarm | n/a |
 | <a name="module_log_group"></a> [log\_group](#module\_log\_group) | ./modules/log-group | n/a |
 | <a name="module_metric_alarm"></a> [metric\_alarm](#module\_metric\_alarm) | ./modules/metric-alarm | n/a |
@@ -26,7 +26,7 @@ No resources.
 ### Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_actions_enabled"></a> [actions\_enabled](#input\_actions\_enabled) | n/a | `bool` | `true` | no |
 | <a name="input_alarm_actions"></a> [alarm\_actions](#input\_alarm\_actions) | n/a | `list(string)` | `[]` | no |
 | <a name="input_alarm_description"></a> [alarm\_description](#input\_alarm\_description) | n/a | `string` | `null` | no |
@@ -56,7 +56,7 @@ No resources.
 ### Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_alarm_arn"></a> [alarm\_arn](#output\_alarm\_arn) | n/a |
 | <a name="output_alarm_name"></a> [alarm\_name](#output\_alarm\_name) | n/a |
 | <a name="output_log_group_arn"></a> [log\_group\_arn](#output\_log\_group\_arn) | n/a |

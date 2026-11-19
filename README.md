@@ -1,11 +1,5 @@
 # terraform-aws-cloudwatch
-
-
-
-
-
-
-
+![](https://raw.githubusercontent.com/rafalmasiarek/readme-gen/main/banners/.gitkeep)
 
 ## About
 
@@ -25,7 +19,27 @@ as an alternative to their typed fields.
 
 
 
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+```text
+The MIT License (MIT)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files, to deal in the Software
+without restriction.
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+
+Source: https://opensource.org/licenses/MIT
+```
+See [LICENSE](LICENSE) for full details.
+## Authors
+
+- Rafał Masiarek | [website](https://masiarek.pl) | [email](mailto:rafal@masiarek.pl) | [github](https://github.com/rafalmasiarek)
 
 
 ## Usage
@@ -151,7 +165,7 @@ this module family yet - added only when one does.
 ### Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.9.0 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 6.0 |
 | <a name="requirement_cwquery"></a> [cwquery](#requirement\_cwquery) | >= 0.1.0 |
@@ -160,7 +174,7 @@ this module family yet - added only when one does.
 ### Modules
 
 | Name | Source | Version |
-|------|--------|---------|
+| ---- | ------ | ------- |
 | <a name="module_composite_alarm"></a> [composite\_alarm](#module\_composite\_alarm) | ./modules/composite-alarm | n/a |
 | <a name="module_log_group"></a> [log\_group](#module\_log\_group) | ./modules/log-group | n/a |
 | <a name="module_metric_alarm"></a> [metric\_alarm](#module\_metric\_alarm) | ./modules/metric-alarm | n/a |
@@ -172,7 +186,7 @@ No resources.
 ### Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_actions_enabled"></a> [actions\_enabled](#input\_actions\_enabled) | n/a | `bool` | `true` | no |
 | <a name="input_alarm_actions"></a> [alarm\_actions](#input\_alarm\_actions) | n/a | `list(string)` | `[]` | no |
 | <a name="input_alarm_description"></a> [alarm\_description](#input\_alarm\_description) | n/a | `string` | `null` | no |
@@ -202,42 +216,11 @@ No resources.
 ### Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_alarm_arn"></a> [alarm\_arn](#output\_alarm\_arn) | n/a |
 | <a name="output_alarm_name"></a> [alarm\_name](#output\_alarm\_name) | n/a |
 | <a name="output_log_group_arn"></a> [log\_group\_arn](#output\_log\_group\_arn) | n/a |
 | <a name="output_log_group_name"></a> [log\_group\_name](#output\_log\_group\_name) | n/a |
-
-
-
-## License
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-```text
-The MIT License (MIT)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files, to deal in the Software
-without restriction.
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
-
-Source: https://opensource.org/licenses/MIT
-```
-
-
-See [LICENSE](LICENSE) for full details.
-
-
-## Authors
-
-- Rafał Masiarek | [website](https://masiarek.pl) | [email](mailto:rafal@masiarek.pl) | [github](https://github.com/rafalmasiarek)
-
-
 
 
 <!-- references -->
