@@ -1,0 +1,24 @@
+name: terraform-aws-cloudwatch/modules/metric-alarm
+repo_url: https://github.com/rafalmasiarek/terraform-aws-cloudwatch
+license: MIT
+
+context:
+  - "## About"
+  - |
+    A single `aws_cloudwatch_metric_alarm` with a simplified, uniform
+    `metrics` list shape covering both the plain metric_name/namespace case
+    and multi-metric math expressions, plus the same tagger-driven unique
+    naming used across this module family. Part of
+    [terraform-aws-cloudwatch](../../); calling it directly works exactly
+    the same as going through the root dispatcher with
+    `type = "metric-alarm"`.
+
+includes:
+  - docs/usage.md
+  - docs/terraform.md
+
+authors:
+  - name: Rafał Masiarek
+    email: rafal@masiarek.pl
+    github: rafalmasiarek
+    website: https://masiarek.pl

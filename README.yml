@@ -1,0 +1,30 @@
+name: terraform-aws-cloudwatch
+repo_url: https://github.com/rafalmasiarek/terraform-aws-cloudwatch
+license: MIT
+
+context:
+  - "## About"
+  - |
+    Shared CloudWatch building blocks for this module family: safely-named
+    log groups, metric alarms, and composite alarms, used internally by
+    sibling modules (`terraform-aws-nat-gateway`,
+    `terraform-aws-ec2-autoscale-group`, ...) and callable directly. This
+    root module is a convenience dispatcher (`var.type`) over
+    [modules/log-group](modules/log-group),
+    [modules/metric-alarm](modules/metric-alarm), and
+    [modules/composite-alarm](modules/composite-alarm) - calling any
+    submodule directly works exactly the same way. `modules/metric-alarm`
+    and `modules/composite-alarm` also accept an optional SQL-like `query`
+    string, parsed by
+    [terraform-provider-cwquery](https://github.com/rafalmasiarek/terraform-provider-cwquery),
+    as an alternative to their typed fields.
+
+includes:
+  - docs/usage.md
+  - docs/terraform.md
+
+authors:
+  - name: Rafał Masiarek
+    email: rafal@masiarek.pl
+    github: rafalmasiarek
+    website: https://masiarek.pl

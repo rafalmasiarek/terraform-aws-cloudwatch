@@ -1,0 +1,24 @@
+name: terraform-aws-cloudwatch/modules/composite-alarm
+repo_url: https://github.com/rafalmasiarek/terraform-aws-cloudwatch
+license: MIT
+
+context:
+  - "## About"
+  - |
+    A single `aws_cloudwatch_composite_alarm` - boolean AND/OR/NOT
+    composition over alarms already defined elsewhere (typically with
+    [modules/metric-alarm](../metric-alarm)), plus the same tagger-driven
+    unique naming used across this module family. Part of
+    [terraform-aws-cloudwatch](../../); calling it directly works exactly
+    the same as going through the root dispatcher with
+    `type = "composite-alarm"`.
+
+includes:
+  - docs/usage.md
+  - docs/terraform.md
+
+authors:
+  - name: Rafał Masiarek
+    email: rafal@masiarek.pl
+    github: rafalmasiarek
+    website: https://masiarek.pl
