@@ -5,7 +5,7 @@
 ### Requirements
 
 | Name | Version |
-| ---- | ------- |
+|------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.9.0 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 6.0 |
 | <a name="requirement_tagger"></a> [tagger](#requirement\_tagger) | >= 0.1.0 |
@@ -13,20 +13,20 @@
 ### Modules
 
 | Name | Source | Version |
-| ---- | ------ | ------- |
+|------|--------|---------|
 | <a name="module_tagger"></a> [tagger](#module\_tagger) | rafalmasiarek/tagger/null | >= 0.5.0 |
 
 ### Resources
 
 | Name | Type |
-| ---- | ---- |
+|------|------|
 | [aws_cloudwatch_log_group.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_log_group) | resource |
 | tagger_origin.self | data source |
 
 ### Inputs
 
 | Name | Description | Type | Default | Required |
-| ---- | ----------- | ---- | ------- | :------: |
+|------|-------------|------|---------|:--------:|
 | <a name="input_kms_key_id"></a> [kms\_key\_id](#input\_kms\_key\_id) | n/a | `string` | `null` | no |
 | <a name="input_log_group_class"></a> [log\_group\_class](#input\_log\_group\_class) | "STANDARD" (default) or "INFREQUENT\_ACCESS" (cheaper storage for logs rarely queried - no Live Tail, slower Insights queries). | `string` | `null` | no |
 | <a name="input_name"></a> [name](#input\_name) | Semantic resource name, e.g. "myvpc-flow-log" - made globally unique via the tagger when use\_tagger = true (log group names must be unique per account+region, and this string alone is not). | `string` | n/a | yes |
@@ -41,6 +41,6 @@
 ### Outputs
 
 | Name | Description |
-| ---- | ----------- |
+|------|-------------|
 | <a name="output_log_group_arn"></a> [log\_group\_arn](#output\_log\_group\_arn) | n/a |
 | <a name="output_log_group_name"></a> [log\_group\_name](#output\_log\_group\_name) | n/a |

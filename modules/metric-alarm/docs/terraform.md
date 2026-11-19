@@ -5,7 +5,7 @@
 ### Requirements
 
 | Name | Version |
-| ---- | ------- |
+|------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.9.0 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 6.0 |
 | <a name="requirement_cwquery"></a> [cwquery](#requirement\_cwquery) | >= 0.1.0 |
@@ -14,20 +14,20 @@
 ### Modules
 
 | Name | Source | Version |
-| ---- | ------ | ------- |
+|------|--------|---------|
 | <a name="module_tagger"></a> [tagger](#module\_tagger) | rafalmasiarek/tagger/null | >= 0.5.0 |
 
 ### Resources
 
 | Name | Type |
-| ---- | ---- |
+|------|------|
 | [aws_cloudwatch_metric_alarm.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) | resource |
 | tagger_origin.self | data source |
 
 ### Inputs
 
 | Name | Description | Type | Default | Required |
-| ---- | ----------- | ---- | ------- | :------: |
+|------|-------------|------|---------|:--------:|
 | <a name="input_actions_enabled"></a> [actions\_enabled](#input\_actions\_enabled) | Native aws\_cloudwatch\_metric\_alarm field - set false to temporarily suspend action-triggering without deleting the alarm. | `bool` | `true` | no |
 | <a name="input_alarm_actions"></a> [alarm\_actions](#input\_alarm\_actions) | n/a | `list(string)` | `[]` | no |
 | <a name="input_alarm_description"></a> [alarm\_description](#input\_alarm\_description) | n/a | `string` | `null` | no |
@@ -51,6 +51,6 @@
 ### Outputs
 
 | Name | Description |
-| ---- | ----------- |
+|------|-------------|
 | <a name="output_alarm_arn"></a> [alarm\_arn](#output\_alarm\_arn) | n/a |
 | <a name="output_alarm_name"></a> [alarm\_name](#output\_alarm\_name) | The final, tagger-made-unique name actually given to the alarm - not necessarily var.name as-is. |
